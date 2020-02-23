@@ -1,0 +1,12 @@
+The DECIMAL and NUMERIC types store exact numeric data values. These types are used when it is important to preserve exact precision, for example with monetary data. In MySQL, NUMERIC is implemented as DECIMAL, so the following remarks about DECIMAL apply equally to NUMERIC. 
+
+whereas
+
+The FLOAT and DOUBLE types represent approximate numeric data values. MySQL uses four bytes for single-precision values and eight bytes for double-precision values. 
+
+as such float and double values are *approximate* and not *exact*
+Decimal should be used.
+
+reference:
+https://dev.mysql.com/doc/refman/8.0/en/fixed-point-types.html
+https://dev.mysql.com/doc/refman/8.0/en/floating-point-types.html
